@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,9 +16,8 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Offset to the camera behind the player by adding the players posistion 
         transform.position = player.transform.position + offset;
     }
-
-
-    }
+}
 
